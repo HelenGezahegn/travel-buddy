@@ -8,6 +8,8 @@ import helmet from "helmet";
 import morgan from "morgan";
 import path from "path"; // comes with node
 import { fileURLToPath } from "url";
+import authRoutes from "./routes/auth.js";
+import { register } from "./controllers/auth.js";
 
 // CONFIGURATIONS (Middleware & Package)
 // Middlewares - Something that runs in between different requests
@@ -36,6 +38,13 @@ const storage = multer.diskStorage({
   }
 });
 const upload = multer({ storage });
+
+// ROUTES WITH FILES
+// register is a controller, the logic of the endpoint
+app.post("/auth/register", upload.single("picture"), register);
+
+// ROUTES
+app.use("/auth", authRoutes);
 
 // MONGOOSE SETUP
 const PORT = process.env.PORT || 6001;
