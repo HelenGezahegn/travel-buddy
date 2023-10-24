@@ -10,7 +10,10 @@ import path from "path"; // comes with node
 import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
+import postRoutes from "./routes/posts.js";
 import { register } from "./controllers/auth.js";
+import { createPost } from "./controllers/posts.js";
+import { verifyToken } from "./middleware/auth.js";
 
 // CONFIGURATIONS (Middleware & Package)
 // Middlewares - Something that runs in between different requests
@@ -43,10 +46,12 @@ const upload = multer({ storage });
 // ROUTES WITH FILES
 // register is a controller, the logic of the endpoint
 app.post("/auth/register", upload.single("picture"), register);
+app.post("/posts", verifyToken, upload.single("picture"), createPost);
 
 // ROUTES
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
+app.use("/posts", postRoutes);
 
 // MONGOOSE SETUP
 const PORT = process.env.PORT || 6001;
