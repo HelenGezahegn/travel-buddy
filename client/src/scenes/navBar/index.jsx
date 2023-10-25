@@ -30,11 +30,11 @@ const NavBar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector((state) => state.user);
-  const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
+  const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
 
   const theme = useTheme();
   const neutralLight = theme.palette.neutral.light;
-  const dark = theme.palette.dark;
+  const dark = theme.palette.neutral.dark;
   const background = theme.palette.background.default;
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
@@ -94,9 +94,10 @@ const NavBar = () => {
               sx={{
                 backgroundColor: neutralLight,
                 width: "150px",
-                borderRadius: "0.25rem 1rem",
+                borderRadius: "0.25rem",
+                p: "0.25rem 1rem",
                 "& .MuiSvgIcon-root": {
-                  p: "0.25rem",
+                  pr: "0.25rem",
                   width: "3rem"
                 },
                 "& .MuiSelect-select:focus": {
@@ -169,8 +170,9 @@ const NavBar = () => {
                   backgroundColor: neutralLight,
                   width: "150px",
                   borderRadius: "0.25rem 1rem",
+                  p: "0.25rem 1rem",
                   "& .MuiSvgIcon-root": {
-                    p: "0.25rem",
+                    pr: "0.25rem",
                     width: "3rem"
                   },
                   "& .MuiSelect-select:focus": {
