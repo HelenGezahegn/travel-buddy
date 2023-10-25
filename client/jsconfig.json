@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src" // when importing files, we start in src. Simplifies our imports
+    "baseUrl": "src"
   },
   "include": ["src"]
 }
