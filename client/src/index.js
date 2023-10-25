@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import authReducer from "./state";
+// eslint-disable-next-line no-unused-vars
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-// only for redux persist
 import {
   persistStore,
   persistReducer,
