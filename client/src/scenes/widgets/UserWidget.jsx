@@ -63,7 +63,7 @@ const UserWidget = ({ userId, picturePath }) => {
               variant="h4"
               color={dark}
               fontWeight="500"
-              sx={{ "&:hover": { color: palette.primary.light } }}
+              sx={{ "&:hover": { color: palette.primary.main } }}
             >
               {firstName} {lastName}
             </Typography>
