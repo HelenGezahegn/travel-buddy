@@ -6,9 +6,9 @@ const Messages = () => {
   return (
     <Box>
       <NavBar />
-      <Box padding="2rem" sx={{ fontFamily: "Rubik" }}>
+      <Box padding="2rem">
         <ChatEngine
-          height="80vh"
+          height="90vh"
           projectID={process.env.REACT_APP_CHAT_PROJECT_ID}
           userName={process.env.REACT_APP_CHAT_USERNAME}
           userSecret={process.env.REACT_APP_CHAT_PASSWORD}
