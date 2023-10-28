@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/HelenGezahegn/social-media-app">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -39,14 +39,14 @@
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/HelenGezahegn/social-media-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/HelenGezahegn/social-media-app">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/HelenGezahegn/social-media-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/HelenGezahegn/social-media-app/issues">Request Feature</a>
   </p>
 </div>
 
@@ -74,7 +74,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -85,7 +84,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+SocialHub is a versatile and dynamic social media app that brings people together, enabling them to connect, communicate, and share experiences in a digital social space. Users can create and customize their profiles, post updates, connect with friends, and discover new people who share their interests. Whether you're looking to stay connected with friends, network professionally, explore shared hobbies in communities, or simply share your life's moments, SocialHub is the one-stop solution for all your social networking needs. Join us in the SocialHub community and unlock the potential for meaningful connections today.
+
+NOTE: Do a search and replace with your text editor for the following: ` `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,14 +94,14 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![React Router][React-Router-dev]][React-Router-url]
+* [![Redux][Redux-dev]][Redux-url]
+* [![Node.js][Node-dev]][Node-url]
+* [![Express][Express-dev]][Express-url]
+* [![MongoDB][Mongo-dev]][Mongo-url]
+* [![Material UI][Material-dev]][Material-url]
+* [![Vercel][Vercel-dev]][Vercel-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,33 +110,46 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Built from scratch, this project contains a backend and a frontend denoted by the "server" and "client" folders respectively. To get a local copy up and running, follow these steps.
 
-### Prerequisites
+### Backend
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+1. Setup MongoDB
+  * [Sign up for a MongoDB account](mongodb.com) 
+  * [Create a cluster](https://www.mongodb.com/docs/guides/atlas/cluster/).
+    * When prompted, create a `.env` file in the `server` directory and add the API key provided called `MONGO_URL`.
+  * [Add a database user](https://www.mongodb.com/docs/guides/atlas/db-user/)
+  * [Configure a network connection](https://www.mongodb.com/docs/guides/atlas/network-connections/)
 
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/HelenGezahegn/social-media-app.git
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Create a `.env` file in the `server` direcotry. Add your port, MongoDB API, and JWT keys. 
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   PORT=3001
+   MONGO_URL=XYZ
+   JWT_SECRET=XYZ
+   ```
+5. Run it!
+   ```js
+   npm run start
    ```
 
+### Frontend
+In another terminal:
+1. Install NPM packages
+   ```sh
+   npm install
+   ```
+2. Run it! Open [http://localhost:3000](http://localhost:3000) to view it in your browser. This page will reload when you make changes and display lint errors in the console.
+ ```js
+   npm run start
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -154,12 +168,20 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Add cloud file storage for assets
+- [ ] Add more to posts than an image or test
+  - [ ] gif or video
+  - [ ] attachments like a PDF
+  - [ ] audio
+- [ ] Add chat
+- [ ] Add notifications
+- [ ] Add help information (e.g. report a bug)
+- [ ] Link other social profiles and make it editable
+- [ ] Make user settings dynamic
+- [ ] Fix profile views and impressions to be real numbers
+- [ ] Scrap the web for advertisements instead of fixed ad
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/HelenGezahegn/social-media-app/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,53 +217,45 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Helen Gezahegn 
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+gezahegn@ualberta.ca
 
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+Project Link: [https://sociopedia-app-1.vercel.app](https://sociopedia-app-1.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/HelenGezahegn/social-media-app.svg?style=for-the-badge
+[contributors-url]: https://github.com/HelenGezahegn/social-media-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/HelenGezahegn/social-media-app.svg?style=for-the-badge
+[forks-url]: https://github.com/HelenGezahegn/social-media-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/HelenGezahegn/social-media-app.svg?style=for-the-badge
+[stars-url]: https://github.com/HelenGezahegn/social-media-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/HelenGezahegn/social-media-app.svg?style=for-the-badge
+[issues-url]: https://github.com/HelenGezahegn/social-media-app/issues
+[license-shield]: https://img.shields.io/github/license/HelenGezahegn/social-media-app.svg?style=for-the-badge
+[license-url]: https://github.com/HelenGezahegn/social-media-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/HelenGezahegn
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
+[Mongo-dev]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+[Mongo-url]: https://mongodb.com
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[Express-dev]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
+[Express-url]: https://expressjs.com/
+[Redux-dev]: https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white
+[Redux-url]: https://react-redux.js.org/
+[React-Router-dev]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[React-Router-url]: https://reactrouter.com/
+[Material-dev]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
+[Material-url]: https://mui.com/material-ui/
+[Node-dev]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[Node-url]: [https://getbootstrap.com](https://nodejs.org/en)
+[Vercel-dev]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
+[Vercel-url]: https://vercel.com 
