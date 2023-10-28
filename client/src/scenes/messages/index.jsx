@@ -6,11 +6,13 @@ const Messages = () => {
   return (
     <Box>
       <NavBar />
-      <ChatEngine
-        projectID={process.env.REACT_APP_CHAT_PROJECT_ID}
-        userName={process.env.REACT_APP_CHAT_USERNAME}
-        userSecret={process.env.REACT_APP_CHAT_PASSWORD}
-      />
+      <Box width="100%" padding="2rem 6%" gap="0.5rem">
+        <ChatEngine
+          projectID={process.env.REACT_APP_CHAT_PROJECT_ID}
+          userName={process.env.REACT_APP_CHAT_USERNAME}
+          userSecret={process.env.REACT_APP_CHAT_PASSWORD}
+        />
+      </Box>
     </Box>
   );
 };
