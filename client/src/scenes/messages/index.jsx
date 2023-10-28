@@ -6,7 +6,7 @@ const Messages = () => {
   return (
     <Box>
       <NavBar />
-      <Box padding="2rem">
+      <Box padding="2rem" sx={{ fontFamily: "Rubik" }}>
         <ChatEngine
           height="100vh"
           projectID={process.env.REACT_APP_CHAT_PROJECT_ID}
