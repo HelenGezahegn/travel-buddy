@@ -4,7 +4,7 @@ const Messages = () => {
   return (
     <ChatEngine
       projectID={process.env.CHAT_PROJECT_ID}
-      userName={process.env.CHAT_USERNAME}
+      userName="Admin"
       userSecret={process.env.CHAT_PASSWORD}
     />
   );
