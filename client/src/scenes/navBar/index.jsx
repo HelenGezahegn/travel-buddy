@@ -35,6 +35,7 @@ const NavBar = () => {
   const theme = useTheme();
   const neutralLight = theme.palette.neutral.light;
   const dark = theme.palette.neutral.dark;
+  const light = theme.palette.neutral.light;
   const background = theme.palette.background.default;
   const primaryDark = theme.palette.primary.dark;
   const alt = theme.palette.background.alt;
@@ -87,6 +88,7 @@ const NavBar = () => {
             onClick={() => {
               navigate("/messages");
             }}
+            sx={{ color: theme.palette.mode === "dark" ? light : dark }}
           >
             <Message sx={{ fontSize: "25px" }} />
           </IconButton>
