@@ -15,6 +15,7 @@ import { useDispatch } from "react-redux";
 import { setLogin } from "state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "components/FlexBetween";
+import baseUrl from "state/baseUrl";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -56,14 +57,11 @@ const Form = () => {
   const isRegister = pageType === "register";
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch(
-      "https://sociopedia-api-psi.vercel.app/auth/login",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values)
-      }
-    );
+    const loggedInResponse = await fetch(`${baseUrl}/auth/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values)
+    });
     const loggedIn = await loggedInResponse.json();
     onSubmitProps.resetForm();
 
@@ -81,13 +79,10 @@ const Form = () => {
     }
     formData.append("picturePath", values.picture.name);
 
-    const savedUserResponse = await fetch(
-      "http://localhost:3001/auth/register",
-      {
-        method: "POST",
-        body: formData
-      }
-    );
+    const savedUserResponse = await fetch(`${baseUrl}/auth/register`, {
+      method: "POST",
+      body: formData
+    });
 
     const savedUser = await savedUserResponse.json();
     onSubmitProps.resetForm();
