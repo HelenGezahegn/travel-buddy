@@ -8,6 +8,7 @@ const Messages = () => {
       <NavBar />
       <Box padding="2rem">
         <ChatEngine
+          height="100vh"
           projectID={process.env.REACT_APP_CHAT_PROJECT_ID}
           userName={process.env.REACT_APP_CHAT_USERNAME}
           userSecret={process.env.REACT_APP_CHAT_PASSWORD}
