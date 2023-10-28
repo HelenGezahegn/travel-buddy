@@ -45,6 +45,7 @@ const MyPostWidget = ({ picturePath }) => {
 
     if (image) {
       // For deployment, multer doesn't work as it's for local saving. Comment out for now the "picture" until images are added via the cloud.
+      // Further, we can't add any images other than the ones in public/asset as those are the only ones that can be accessed when deployed.
       // formData.append("picture", image); // can reference index.js in server under ROUTES WITH FILES
       formData.append("picturePath", image.name);
     }
