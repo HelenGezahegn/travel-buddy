@@ -73,10 +73,15 @@ const Form = () => {
 
   const register = async (values, onSubmitProps) => {
     // this allows us to send form info with image
+    console.log("Register", registerSchema);
     const formData = new FormData();
     for (let value in values) {
-      formData.append(value, values[value]);
+      if (value !== "picture") {
+        // user object in mongodb doesn't expect picture key
+        formData.append(value, values[value]);
+      }
     }
+
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(`${baseUrl}/auth/register`, {
