@@ -57,7 +57,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://sociopedia-app-1.vercel.app//auth/login",
+      "http:localhost:3001/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
