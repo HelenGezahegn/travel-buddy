@@ -57,7 +57,7 @@ const NavBar = () => {
             }
           }}
         >
-          Sociopedia
+          TravelBuddy
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
@@ -88,7 +88,6 @@ const NavBar = () => {
             onClick={() => {
               navigate("/messages");
             }}
-            sx={{ color: theme.palette.mode === "dark" ? light : dark }}
           >
             <Message sx={{ fontSize: "25px" }} />
           </IconButton>
