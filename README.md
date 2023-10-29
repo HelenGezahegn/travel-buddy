@@ -41,7 +41,7 @@
     <a href="https://github.com/HelenGezahegn/social-media-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/HelenGezahegn/social-media-app">View Demo</a>
+    <a href="https://travel-buddy-1.vercel.app">View Demo</a>
     ·
     <a href="https://github.com/HelenGezahegn/social-media-app/issues">Report Bug</a>
     ·
