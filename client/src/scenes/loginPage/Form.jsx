@@ -64,7 +64,7 @@ const Form = () => {
     });
     const loggedIn = await loggedInResponse.json();
     onSubmitProps.resetForm();
-
+    
     if (loggedIn) {
       dispatch(setLogin({ user: loggedIn.user, token: loggedIn.token }));
     }
@@ -73,7 +73,6 @@ const Form = () => {
 
   const register = async (values, onSubmitProps) => {
     // this allows us to send form info with image
-    console.log("Register", registerSchema);
     const formData = new FormData();
     for (let value in values) {
       if (value !== "picture") {
