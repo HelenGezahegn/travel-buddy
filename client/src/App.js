@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import HomePage from "scenes/homePage";
 import LoginPage from "scenes/loginPage";
 import ProfilePage from "scenes/profilePage";
-import Messenger from "scenes/messages";
+import Messenger from "scenes/chat";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
 // CssBaseline = css reset for material ui
@@ -32,7 +32,7 @@ function App() {
               element={isAuth ? <ProfilePage /> : <Navigate to="/" />}
             />
             <Route
-              path="/messages"
+              path="/chat"
               element={isAuth ? <Messenger /> : <Navigate to="/" />}
             />
           </Routes>
