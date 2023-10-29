@@ -85,8 +85,6 @@
 
 SocialHub is a versatile and dynamic social media app that brings people together, enabling them to connect, communicate, and share experiences in a digital social space. Users can create and customize their profiles, post updates, connect with friends, and discover new people who share their interests. Whether you're looking to stay connected with friends, network professionally, explore shared hobbies in communities, or simply share your life's moments, SocialHub is the one-stop solution for all your social networking needs. Join us in the SocialHub community and unlock the potential for meaningful connections today.
 
-NOTE: Do a search and replace with your text editor for the following: ` `project_title`, `project_description`
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
