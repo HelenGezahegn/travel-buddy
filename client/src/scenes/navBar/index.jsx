@@ -86,7 +86,7 @@ const NavBar = () => {
           </IconButton>
           <IconButton
             onClick={() => {
-              navigate("/messages");
+              navigate("/chat");
             }}
           >
             <Message sx={{ fontSize: "25px" }} />

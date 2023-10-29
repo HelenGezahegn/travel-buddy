@@ -16,7 +16,7 @@ import { setLogin } from "state";
 import Dropzone from "react-dropzone";
 import FlexBetween from "components/FlexBetween";
 import baseUrl from "state/baseUrl";
-import { migrateUserToChat } from "scenes/messages/chatService";
+import { createChatUser } from "scenes/chat/chatService";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -93,7 +93,7 @@ const Form = () => {
     onSubmitProps.resetForm();
 
     if (savedUser) {
-      migrateUserToChat(savedUser);
+      createChatUser(savedUser);
       setPageType("login");
     }
   };
