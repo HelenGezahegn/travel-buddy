@@ -1,5 +1,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a name="readme-top"></a>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -7,8 +9,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -18,6 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -25,19 +26,17 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/HelenGezahegn/social-media-app">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="client/public/logo192.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">TravelBuddy</h3>
 
   <p align="center">
-    project_description
+    Connect with fellow travelers!
     <br />
     <a href="https://github.com/HelenGezahegn/social-media-app"><strong>Explore the docs »</strong></a>
     <br />
@@ -49,8 +48,6 @@
     <a href="https://github.com/HelenGezahegn/social-media-app/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -77,12 +74,14 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<div align="center">
+<img src="client/public/assets/product.gif" alt="product" style="width:800px">
+</div>
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 SocialHub is a versatile and dynamic social media app that brings people together, enabling them to connect, communicate, and share experiences in a digital social space. Users can create and customize their profiles, post updates, connect with friends, and discover new people who share their interests. Whether you're looking to stay connected with friends, network professionally, explore shared hobbies in communities, or simply share your life's moments, SocialHub is the one-stop solution for all your social networking needs. Join us in the SocialHub community and unlock the potential for meaningful connections today.
 
@@ -90,24 +89,21 @@ NOTE: Do a search and replace with your text editor for the following: ` `projec
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
-* [![React][React.js]][React-url]
-* [![React Router][React-Router-dev]][React-Router-url]
-* [![Redux][Redux-dev]][Redux-url]
-* [![Node.js][Node-dev]][Node-url]
-* [![Express][Express-dev]][Express-url]
-* [![MongoDB][Mongo-dev]][Mongo-url]
-* [![Material UI][Material-dev]][Material-url]
-* [![Vercel][Vercel-dev]][Vercel-url]
+- [![React][React.js]][React-url]
+- [![React Router][React-Router-dev]][React-Router-url]
+- [![Redux][Redux-dev]][Redux-url]
+- [![Node.js][Node-dev]][Node-url]
+- [![Express][Express-dev]][Express-url]
+- [![MongoDB][Mongo-dev]][Mongo-url]
+- [![Material UI][Material-dev]][Material-url]
+- [![Vercel][Vercel-dev]][Vercel-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 Built from scratch, this project contains a backend and a frontend denoted by the "server" and "client" folders respectively. To get a local copy up and running, follow these steps.
@@ -115,11 +111,12 @@ Built from scratch, this project contains a backend and a frontend denoted by th
 ### Backend
 
 1. Setup MongoDB
-  * [Sign up for a MongoDB account](mongodb.com) 
-  * [Create a cluster](https://www.mongodb.com/docs/guides/atlas/cluster/).
-    * When prompted, create a `.env` file in the `server` directory and add the API key provided called `MONGO_URL`.
-  * [Add a database user](https://www.mongodb.com/docs/guides/atlas/db-user/)
-  * [Configure a network connection](https://www.mongodb.com/docs/guides/atlas/network-connections/)
+
+- [Sign up for a MongoDB account](mongodb.com)
+- [Create a cluster](https://www.mongodb.com/docs/guides/atlas/cluster/).
+  - When prompted, create a `.env` file in the `server` directory and add the API key provided called `MONGO_URL`.
+- [Add a database user](https://www.mongodb.com/docs/guides/atlas/db-user/)
+- [Configure a network connection](https://www.mongodb.com/docs/guides/atlas/network-connections/)
 
 2. Clone the repo
    ```sh
@@ -129,11 +126,11 @@ Built from scratch, this project contains a backend and a frontend denoted by th
    ```sh
    npm install
    ```
-4. Create a `.env` file in the `server` direcotry. Add your port, MongoDB API, and JWT keys. 
+4. Create a `.env` file in the `server` direcotry. Add your port, MongoDB API, and JWT keys.
    ```js
-   PORT=3001
-   MONGO_URL=XYZ
-   JWT_SECRET=XYZ
+   PORT = 3001;
+   MONGO_URL = XYZ;
+   JWT_SECRET = XYZ;
    ```
 5. Run it!
    ```js
@@ -141,20 +138,25 @@ Built from scratch, this project contains a backend and a frontend denoted by th
    ```
 
 ### Frontend
+
 In another terminal:
+
 1. Install NPM packages
+
    ```sh
    npm install
    ```
+
 2. Run it! Open [http://localhost:3000](http://localhost:3000) to view it in your browser. This page will reload when you make changes and display lint errors in the console.
- ```js
-   npm run start
+
+   ```sh
+     npm run start
    ```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -163,9 +165,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [ ] Add cloud file storage for assets
@@ -185,9 +186,8 @@ See the [open issues](https://github.com/HelenGezahegn/social-media-app/issues) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -203,21 +203,19 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
-Helen Gezahegn 
+Helen Gezahegn
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -227,9 +225,9 @@ Project Link: [https://sociopedia-app-1.vercel.app](https://sociopedia-app-1.ver
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/HelenGezahegn/social-media-app.svg?style=for-the-badge
 [contributors-url]: https://github.com/HelenGezahegn/social-media-app/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/HelenGezahegn/social-media-app.svg?style=for-the-badge
@@ -256,6 +254,7 @@ Project Link: [https://sociopedia-app-1.vercel.app](https://sociopedia-app-1.ver
 [Material-dev]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
 [Material-url]: https://mui.com/material-ui/
 [Node-dev]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+
 [Node-url]: [https://getbootstrap.com](https://nodejs.org/en)
 [Vercel-dev]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
-[Vercel-url]: https://vercel.com 
+[Vercel-url]: https://vercel.com
