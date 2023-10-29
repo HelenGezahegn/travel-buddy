@@ -36,7 +36,7 @@
 <h3 align="center">TravelBuddy</h3>
 
   <p align="center">
-    Connect with fellow travelers!
+    Connect with fellow travellers!
     <br />
     <a href="https://github.com/HelenGezahegn/social-media-app"><strong>Explore the docs »</strong></a>
     <br />
