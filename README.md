@@ -82,8 +82,14 @@
 <img src="client/public/assets/product.gif" alt="product" style="width:800px">
 </div>
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+<br />
 
-SocialHub is a versatile and dynamic social media app that brings people together, enabling them to connect, communicate, and share experiences in a digital social space. Users can create and customize their profiles, post updates, connect with friends, and discover new people who share their interests. Whether you're looking to stay connected with friends, network professionally, explore shared hobbies in communities, or simply share your life's moments, SocialHub is the one-stop solution for all your social networking needs. Join us in the SocialHub community and unlock the potential for meaningful connections today.
+TravelBuddy is the ultimate social media app designed exclusively for wanderlust-driven globetrotters, adventure seekers, and travel enthusiasts. Whether you're a solo backpacker, a family explorer, or an avid jet-setter, RoamConnect is your digital passport to a world of incredible experiences and connections. On the app, you can: 
+* Easily find and connect with travelers who share your interests, itineraries, or travel styles.
+* Forge new friendships, plan meetups, and embark on epic adventures together.
+* Discover the most breathtaking destinations, hidden gems, and must-visit spots by engaging in our vast community of fellow travelers around the globe.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +115,6 @@ Built from scratch, this project contains a backend and a frontend denoted by th
 ### Backend
 
 1. Setup MongoDB
-
 - [Sign up for a MongoDB account](mongodb.com)
 - [Create a cluster](https://www.mongodb.com/docs/guides/atlas/cluster/).
   - When prompted, create a `.env` file in the `server` directory and add the API key provided called `MONGO_URL`.
@@ -148,7 +153,7 @@ In another terminal:
 2. Run it! Open [http://localhost:3000](http://localhost:3000) to view it in your browser. This page will reload when you make changes and display lint errors in the console.
 
    ```sh
-     npm run start
+   npm run start
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -157,9 +162,7 @@ In another terminal:
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Demo video coming soon.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
