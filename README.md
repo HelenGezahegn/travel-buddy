@@ -124,7 +124,7 @@ Built from scratch, this project contains a backend and a frontend denoted by th
    ```sh
    npm install
    ```
-4. Create a `.env` file in the `server` direcotry. Add your port, MongoDB API, and JWT keys.
+4. Create a `.env` file in the `server` directory. Add your port, MongoDB API, and JWT keys.
    ```js
    PORT = 3001;
    MONGO_URL = XYZ;
