@@ -35,7 +35,6 @@ const NavBar = () => {
   const theme = useTheme();
   const neutralLight = theme.palette.neutral.light;
   const dark = theme.palette.neutral.dark;
-  const light = theme.palette.neutral.light;
   const background = theme.palette.background.default;
   const primaryDark = theme.palette.primary.dark;
   const alt = theme.palette.background.alt;

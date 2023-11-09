@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import { syncUsers } from "./chatService";
 
 const Messages = () => {
+  // eslint-disable-next-line no-unused-vars
   const { userId } = useParams();
   const token = useSelector((state) => state.token);
 

@@ -7,7 +7,7 @@ const createChatUser = async (savedUser) => {
   formData.append("custom_json", savedUser);
 
   try {
-    const savedUserResponse = await fetch("https://api.chatengine.io/users/", {
+    await fetch("https://api.chatengine.io/users/", {
       method: "POST",
       headers: {
         "PRIVATE-KEY": process.env.REACT_APP_CHAT_PROJECT_SECRET_KEY
