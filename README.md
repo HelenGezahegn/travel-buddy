@@ -84,7 +84,7 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 <br />
 
-TravelBuddy is the ultimate social media app designed exclusively for wanderlust-driven globetrotters, adventure seekers, and travel enthusiasts. Whether you're a solo backpacker, a family explorer, or an avid jet-setter, RoamConnect is your digital passport to a world of incredible experiences and connections. On the app, you can: 
+TravelBuddy is the ultimate social media app designed exclusively for wanderlust-driven globetrotters, adventure seekers, and travel enthusiasts. Whether you're a solo backpacker, a family explorer, or an avid jet-setter, TravelBuddy is your digital passport to a world of incredible experiences and connections. On the app, you can: 
 * Easily find and connect with travelers who share your interests, itineraries, or travel styles.
 * Forge new friendships, plan meetups, and embark on epic adventures together.
 * Discover the most breathtaking destinations, hidden gems, and must-visit spots by engaging in our vast community of fellow travelers around the globe.
